@@ -90,11 +90,25 @@ nav > div > a:not(:first-child) {
     position: absolute;
     z-index: 2;
     padding-left: 50px;
-    width: 40%;
+    width: auto;
     top: 50%;
 }
 
 /* my name */
-#welcome span {
-    font
+#name {
+    color: var(--p3);
+    font-weight: 900;
+    font-size: 50pt;
+}
+
+#welcome p {
+    padding-left: 10px;
+    margin-left: 5px;
+    border-left: var(--p5) solid 2px;
+    color: var(--p5);
+}
+
+#welcome p span {
+    font-weight: 700;
+    color: var(--p6);
 }
