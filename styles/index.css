@@ -3,8 +3,10 @@
     /* animation-name: bgcolor;
     animation-duration: 10s;
     animation-iteration-count: infinite; */
+    font-family: var(--f1);
 
 }
+
 
 /* bg color animation */
 @keyframes bgcolor {
@@ -19,6 +21,11 @@
     --p2: #1363DF;
     --p3: #47B5FF;
     --p4: #DFF6FF;
+    --p5: #FAFAFA;
+    --p6: #C7EEFF;
+    --p6: #0077C0;
+    --p7: #1D242B;
+    --f1: font-family: 'Poppins', sans-serif;
 }
 
 /* scroll bars */
@@ -85,4 +92,9 @@ nav > div > a:not(:first-child) {
     padding-left: 50px;
     width: 40%;
     top: 50%;
+}
+
+/* my name */
+#welcome span {
+    font
 }
