@@ -25,6 +25,10 @@
     --p6: #C7EEFF;
     --p6: #0077C0;
     --p7: #1D242B;
+    --p8: #F0F87F;
+    --p9: #4BC87F;
+    --p10: #29668B;
+    --p11: #6EAFF7;
     --f1: font-family: 'Poppins', sans-serif;
 }
 
@@ -101,6 +105,7 @@ nav > div > a:not(:first-child) {
     font-size: 50pt;
 }
 
+/* my discription */
 #welcome p {
     padding-left: 10px;
     margin-left: 5px;
@@ -111,4 +116,74 @@ nav > div > a:not(:first-child) {
 #welcome p span {
     font-weight: 700;
     color: var(--p6);
+}
+
+/* profile buttons */
+.profileButton {
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px;
+    width: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.profileButton {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.profileButton span:after {
+    content: '\00bb';
+    position: absolute;
+    font-size: 2.2em;
+    opacity: 0;
+    top: 0%;
+    right: 27px;
+    transition: 0.5s;
+  }
+  
+.profileButton:hover span {
+    padding-right: 25px;
+  }
+  
+.profileButton:hover span:after {
+    opacity: 1;
+    right: 20px;
+  }
+
+.cv {
+    background-color: var(--p10);
+    color: var(--p5);
+}
+
+.cv:hover {
+    background-image: linear-gradient(90deg, var(--p10), var(--p11));
+    transition: 0.5s;
+}
+
+.dev {
+    background-color: var(--p9);
+    color: var(--p7);
+}
+
+.dev:hover {
+    background-image: linear-gradient(90deg, var(--p9), #affd70);
+    transition: 0.5s;
+}
+
+.graphics {
+    background-color: var(--p8);
+    color: var(--p7);
+}
+
+.graphics:hover {
+    background-image: linear-gradient(90deg, var(--p8), #ffcd44);
+    transition: 0.5s;
 }
