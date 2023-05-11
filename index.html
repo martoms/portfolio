@@ -20,16 +20,22 @@
 
     </head>
     <body id="mainBackground">
-        <div id="main">
-            <nav>
-                <a href=""><img src="./images/marjohn.svg" alt="my Logo" id="logo"></a>
-                <div>
-                  <a href="">Home</a>
-                  <a href="">About Me</a>
-                  <a href="">Portfolio</a>
-                  <a href="">Contact</a>
+        <nav>
+            <a href=""><img src="./images/marjohn.svg" alt="my Logo" id="logo"></a>
+            <div>
+              <a class="active" href="">Home</a>
+              <a href="">About</a>
+              <div class="dropdown">
+                <a href="">Portfolio</a>
+                <div class="dropdown-content">
+                    <a href="">Web/Sofware Developer</a>
+                    <a href="">Graphic Designer</a>
                 </div>
-              </nav>
+              </div>
+              <a id="contact" href="">Contact</a>
+            </div>
+        </nav>
+        <div id="main">
             <img src="./images/marjohn.png" alt="my Image">
             <div id="welcome">
                 <span id="name">Marjohn Tomatao</span>
