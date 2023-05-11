@@ -47,7 +47,7 @@ body {
 
 /* top navigation bar */
 nav {
-    position: relative;
+    position: fixed;
     z-index: 3;
     width: 100%;
     display: flex;
@@ -95,10 +95,6 @@ div.dropdown:hover {
 }
 
 #mainBackground div.dropdown a:hover {
-    transition: 0.1s;
-    transform: scale(1.5);
-    position: relative;
-    top: 0px;
     padding-right: 0px;
     padding-left: 0px;
 }
@@ -106,6 +102,10 @@ div.dropdown:hover {
 #mainBackground div.dropdown div.dropdown-content:hover {
     padding-left: 0px;
     padding-right: 0px;
+}
+
+#mainBackground div.dropdown div.dropdown-content {
+    display: none;
 }
 
 #mainBackground div.dropdown div.dropdown-content a {
@@ -119,6 +119,17 @@ div.dropdown:hover {
     top: 3px;
     padding-right: 0px;
     padding-left: 0px;
+}
+
+#mainBackground div.dropdown:hover div.dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    border-color: var(--p8);
+    border-style: solid;
+    border-width: 0 0 0 2px;
+    padding-left: 3px !important;
 }
 
 #logo {
