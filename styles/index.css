@@ -197,6 +197,7 @@ div.dropdown-content {
     border-radius: 50px;
     border: none;
     text-align: center;
+    text-decoration: none;
     font-size: 16px;
     font-weight: 700;
     padding: 20px;
@@ -204,6 +205,10 @@ div.dropdown-content {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+}
+
+.profileButton a {
+    text-decoration: none;
 }
 
 /* Profile Buttion Animation */
@@ -231,6 +236,9 @@ div.dropdown-content {
 /* CURRICULUM VITAE Button */
 .cv {
     background-color: var(--p10);
+}
+
+.cv a, .cv a:hover {
     color: var(--p5);
 }
 
@@ -243,6 +251,9 @@ div.dropdown-content {
 /* WEB/SOFTWARE DEVELOPER Button */
 .dev {
     background-color: var(--p9);
+}
+
+.dev a, .dev a:hover {
     color: var(--p7);
 }
 
@@ -255,6 +266,9 @@ div.dropdown-content {
 /* GRAPHIC DESIGNER Button */
 .graphics {
     background-color: var(--p8);
+}
+
+.graphics a, .graphics a:hover {
     color: var(--p7);
 }
 
