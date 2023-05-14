@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: var(--f1);
+}
+
+/* VARIABLES: Colors | Fonts */
+:root {
+    --p1: #06283D;
+    --p2: #1363DF;
+    --p3: #47B5FF;
+    --p4: #DFF6FF;
+    --p5: #FAFAFA;
+    --p6: #C7EEFF;
+    --p6: #0077C0;
+    --p7: #1D242B;
+    --p8: #F0F87F;
+    --p9: #4BC87F;
+    --p10: #29668B;
+    --p11: #6EAFF7;
+    --f1: font-family: 'Poppins', sans-serif;
+}
+
+/* SCROLL BAR | GRADIENT BACKGROUND */
+body {
+    overflow-y: auto;
+    overflow-x: hidden; 
+    background-image: linear-gradient(135deg, var(--p1), var(--p1), var(--p2));
+}
+
+.icon {
+    width: 1.28571429em;
+    text-align: center;
+}

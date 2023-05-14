@@ -1,78 +1,135 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marjohn Tomatao | About</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./images/marjohn.ico">
+    <link rel="icon" type="image/x-icon" href="../images/marjohn.ico">
 
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<!-- Google Fonts -->
+    <!-- External Stylesheet -->
+    <!-- NAVBAR -->
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <!-- Main Content -->
+    <link rel="stylesheet" href="../styles/about.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&display=swap" rel="stylesheet">
 
-</head>
+  </head>
 <body class="w3-light-grey">
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
   <!-- The Grid -->
   <div class="w3-row-padding">
+
+    <nav>
+      <!-- My Logo Image -->
+      <a href="../index.html"><img src="../images/marjohn.svg" alt="my Logo" id="logo"></a>
+  
+      <!-- Navigation Menu -->
+      <div>
+        <a href="index.html">Home</a>
+        <a class="active" href="pages/about.html">About</a>
+        <div class="dropdown">
+          <a href="">Portfolio</a>
+          <div class="dropdown-content">
+              <a href="pages/dev.html">Web/Sofware Developer</a>
+              <a href="pages/graphic.html">Graphic Designer</a>
+          </div>
+        </div>
+        <a id="contact" href="">Contact</a>
+      </div>
+    </nav>
   
     <!-- Left Column -->
     <div class="w3-third">
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="/w3images/avatar_hat.jpg" style="width:100%" alt="Avatar">
+          <img src="../images/cv_profile.webp" style="width:100%" alt="profile_pic">
           <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Jane Doe</h2>
+            <h2>Marjohn Tomatao</h2>
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
+          <div>
+            <img class="icon" src="../images/work.webp">
+            <span>Fullstack Developer | Graphic Designer | Faculty</span>
+          </div>
+          <div>
+            <img class="icon" src="../images/home.webp">
+            <span>Buenavista, Agusan del Norte, PH</span>
+          </div><div>
+            <img class="icon" src="../images/email.webp">
+            <span>tomataomarjohn@gmail.com</span>
+          </div><div>
+            <img class="icon" src="../images/phone.webp">
+            <span>+639105583385</span>
+          </div>
           <hr>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Adobe Photoshop</p>
+          <div>
+            <img class="icon" src="../images/skill.webp">
+            <span>Skills</span>
+          </div>
+          <p>Web/Software Development</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
           </div>
-          <p>Photography</p>
+          <p>Adobe CC Suites</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
               <div class="w3-center w3-text-white">80%</div>
             </div>
           </div>
-          <p>Illustrator</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-          <p>Media</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
           <br>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <div>
+            <img class="icon" src="../images/personal.webp">
+            <span>Personal Data</span>
+          </div>
+          <table>
+            <tr>
+              <td>Age:</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Date of Birth:</td>
+              <td>June 20, 1996</td>
+            </tr>
+            <tr>
+              <td>Gender:</td>
+              <td>Male</td>
+            </tr>
+            <tr>
+              <td>Civil Status:</td>
+              <td>Single</td>
+            </tr>
+          </table>
+          <br>
+          <div>
+            <img class="icon" src="../images/world.webp">
+            <span>Languages</span>
+          </div>
           <p>English</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
           </div>
-          <p>Spanish</p>
+          <p>German</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Filipino</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
           </div>
-          <p>German</p>
+          <p>Cebuano</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
           </div>
@@ -87,66 +144,90 @@
     <div class="w3-twothird">
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
+        <div>
+          <img class="icon" src="../images/work.webp">
+          <span>Work Experience</span>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <h5 class="w3-opacity">Faculty | Senior High</h5>
+          <div>
+            <img class="icon" src="../images/calendar.webp">
+            <p>August 2021 - <span>Current</span></p>
+          </div>
+          <div>
+            <p>Father Saturnino Urios University</p>
+            <p>Senior High Faculty in Philosophy and Religious Education</p>
+            <p>Morelos Campus, Libertad, Butuan City</p>
+          </div>
           <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+          <h5 class="w3-opacity">Faculty | Junior High</h5>
+          <div>
+            <img class="icon" src="../images/calendar.webp">
+            <p>May 2019 - April 2020</p>
+          </div>
+          <div>
+            <p>Ateneo de Zamboanga University</p>
+            <p>Junior High School Faculty in Christian Education</p>
+            <p>Kreutz Campus, Tumaga, Zamboanga City</p>
+          </div>
+          <hr>
         </div>
       </div>
 
       <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div>
+          <img class="icon" src="../images/education.webp">
+          <span>Education</span>
+        </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
+          <h5 class="w3-opacity">Online Coding Bootcamp</h5>
+          <div>
+            <img class="icon" src="../images/calendar.webp">
+            <p>May 2023 - August 2023</p>
+          </div>
+          <p>Zuitt Learning Institute</p>
+          <p>3rd Floor Caswynn Building, No.134 Timog Avenue, Sacred Heart Quezon City</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
+          <h5 class="w3-opacity">Seminary Course of Sacred Theology</h5>
+          <div>
+            <img class="icon" src="../images/calendar.webp">
+            <p>SY 2017 -2019</p>
+          </div>
+          <p>Saint John Vianney Theological Seminary</p>
+          <p>Camaman-an, Cagayan de Oro City</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-          <p>Bachelor Degree</p><br>
+          <h5 class="w3-opacity">AB Major in Philosophy</h5>
+          <div>
+            <img class="icon" src="../images/calendar.webp">
+            <p>SY 2012 -2017</p>
+          </div>
+          <p>Saint Peter College Seminary</p>
+          <p>Km. 6, Ampayon, Butuan City</p>
+          <hr>
         </div>
       </div>
 
     <!-- End Right Column -->
     </div>
+
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+      <p>Find me on social media.</p>
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
     
   <!-- End Grid -->
   </div>
-  
-  <!-- End Page Container -->
-</div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
 
 </body>
 </html>
