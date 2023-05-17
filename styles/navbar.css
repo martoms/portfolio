@@ -1,3 +1,27 @@
+* {
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: var(--f1);
+}
+
+/* VARIABLES: Colors | Fonts */
+:root {
+    --p1: #06283D;
+    --p2: #1363DF;
+    --p3: #47B5FF;
+    --p4: #DFF6FF;
+    --p5: #FAFAFA;
+    --p6: #C7EEFF;
+    --p6: #0077C0;
+    --p7: #1D242B;
+    --p8: #F0F87F;
+    --p9: #4BC87F;
+    --p10: #29668B;
+    --p11: #6EAFF7;
+    --f1: font-family: 'Poppins', sans-serif;
+}
+
 /* My Professional Logo */
 #logo {
     position: relative;
@@ -10,7 +34,7 @@
 /* MAIN NAVBAR: Position | Alignment | Background */
 nav {
     position: fixed;
-    z-index: 3;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -21,14 +45,15 @@ nav {
 }
 
 /* Navigation Menu Position */
-nav > div {
+.nav-items {
     display: flex;
     align-items: center;
 }
 
 /* Navigation Menu Spacing */
-nav > div > a:not(:first-child), div.dropdown {
+.nav-items a:not(.active), div.dropdown {
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Not-visted | Visited */
