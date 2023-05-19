@@ -60,7 +60,7 @@ nav {
     justify-content: space-between;
     padding: 10px 50px 6px 50px;
     background-color: var(--p5);
-    box-shadow: 0 5px 8px rgb(17, 17, 17);
+    box-shadow: 0 5px 8px rgb(17, 17, 17, 0.5);
 }
 
 /* Navigation Menu Position */
@@ -163,21 +163,96 @@ div.dropdown:hover div.dropdown-content {
     transform: translateX(-10%);
 }
 
+/* PERSONAL DATA */
 #grid-side {
     background-color: white;
     margin: 60px 10px 10px 10px;
-    border-radius: 10px;
     width: 80%;
+    border-radius: 10px;
+}
+
+/* Personal Data Content Padding */
+#grid-side div:not(.profile) {
     padding: 10px;
 }
 
-.profile img {
-    width: 100%;
+/* Horizontal Rule Styling */
+#grid-side hr {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    margin: 15px auto 10px auto;
+    width: 95%;
+}
+
+/* Personal Data Heading Icons */
+#grid-side .icon {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* Personal Data Headings */
+.icon + span {
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 [class^="icon"] {
-    width: 10px;
+    width: 5px;
 }
+
+/* Headers and Icons Alignment */
+[class$="data"]:not(.pro-data) > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-container-skill {
+    display: block;
+    width: 100%;
+    text-align: left;
+
+}
+
+/* Profile Image */
+.profile img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Profile Name */
+.profile h2 {
+    position: relative;
+    display: block;
+    left: 10px;
+    bottom: 55px;
+    z-index: 1;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: -60px;
+}
+
+/* PROFESSIONAL DATA START */
+
+/* Professional Data Icon */
+.icon-pro {
+    width: 1rem;
+    margin-right: 5px;
+}
+
+/* Professional Data Text */
+.pro-data div {
+    font-size: 9.5pt;
+    margin-bottom: -10px;
+}
+
+/* PROFESSIONAL DATA END */
+
+/* SKILLS DATA START */
+
+/*  */
+
+/* SKILLS DATA END */
 
 #grid-side div {
     width: 100%;
