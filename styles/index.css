@@ -46,20 +46,20 @@
 #logo {
     position: relative;
     height: auto;
-    width: 50px;
+    width: 40px;
     margin-right: 100%;
-    top: 0.5rem;
+    top: 5px;
 }
 
 /* MAIN NAVBAR: Position | Alignment | Background */
 nav {
     position: fixed;
-    top: 5px;
+    top: 0;
     z-index: 3;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 50px 0px 50px;
+    padding: 10px 50px 6px 50px;
     background-color: none;
     background-image: none;
 }
@@ -89,7 +89,7 @@ nav div a:link:not(.dropdown-content), nav div a:visited {
     transform: scale(1.5);
     position: relative;
     border: solid var(--p2);
-    border-width: 0 0 2px 0;
+    border-width: 0 0 3px 0;
     margin-right: 15px;
     margin-left: 15px;
 }
@@ -121,10 +121,10 @@ div.dropdown-content {
 
 /* Dropdown-Content List Behavior and Appearance */
 .dropdown-content a:hover {
-    border-color: var(--p8);
+    border-color: var(--p3);
     border-style: solid;
-    border-width: 0 0 0 2px;
-    padding-left: 3px !important;
+    border-width: 0 0 0 5px;
+    padding-left: 5px !important;
 }
 
 /* Dropdown-Content Not-Hovered */

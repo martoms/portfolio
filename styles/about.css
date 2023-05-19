@@ -22,12 +22,8 @@
     --f1: 'Poppins', sans-serif;
 }
 
-/* SCROLL BAR | GRADIENT BACKGROUND */
-body {
-    overflow-y: auto;
-    overflow-x: hidden; 
-}
 
+/* GRID LAYOUT */
 #grid-nav { grid-area: nav;}
 #grid-side { grid-area: side;}
 #grid-main { grid-area: main;}
@@ -35,9 +31,12 @@ body {
 #grid {
     display: grid;
     grid-template-areas: 
-    'nav nav nav nav nav'
-    'side side main main main';
-    background-image: linear-gradient(135deg, var(--p1), var(--p1), var(--p2));
+    'nav nav nav nav nav nav nav nav nav nav nav nav'
+    'side main main main main main main main main main main main';
+    grid-gap: 10px;
+    background-color: #c5c6c7;
+    /* background-image: linear-gradient(135deg, var(--p1), var(--p1), var(--p2)); */
+    /* padding: 10px; */
 }
 
 /* TOP NAVBAR SETTINGS */
@@ -46,22 +45,22 @@ body {
 #logo {
     position: relative;
     height: auto;
-    width: 50px;
+    width: 40px;
     margin-right: 100%;
-    top: 0.5rem;
+    top: 0;
 }
 
 /* MAIN NAVBAR: Position | Alignment | Background */
 nav {
     position: fixed;
-    top: 5px;
+    top: 0;
     z-index: 3;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 50px 0px 50px;
-    background-color: none;
-    background-image: none;
+    padding: 10px 50px 6px 50px;
+    background-color: var(--p5);
+    box-shadow: 0 5px 8px rgb(17, 17, 17);
 }
 
 /* Navigation Menu Position */
@@ -81,17 +80,17 @@ nav div a:link:not(.dropdown-content), nav div a:visited {
     text-decoration: none;
     font-weight: 500;
     font-size: 1.5rem;
-    color: var(--p5);
+    color: var(--p10);
 }
 
 /* Active / Current Page */
-.active {
+.nav-items a.active {
     transform: scale(1.5);
     position: relative;
     border: solid var(--p2);
-    border-width: 0 0 2px 0;
+    border-width: 0 0 3px 0;
     margin-right: 15px;
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
 /* Hover */
@@ -121,10 +120,17 @@ div.dropdown-content {
 
 /* Dropdown-Content List Behavior and Appearance */
 .dropdown-content a:hover {
-    border-color: var(--p8);
+    border-color: var(--p3);
     border-style: solid;
-    border-width: 0 0 0 2px;
-    padding-left: 3px !important;
+    border-width: 0 0 0 5px;
+    padding-left: 5px !important;
+    /* padding-right: 0px; */
+}
+
+div.dropdown-content a:not(.dropdown) {
+    display: inline-block;
+    width: 50px;
+    background-color: var(--p7);
 }
 
 /* Dropdown-Content Not-Hovered */
@@ -134,16 +140,15 @@ div.dropdown div.dropdown-content {
 
 /* Dropdown-Content Appearance */
 div.dropdown div.dropdown-content a {
-    display: block;
     text-transform: capitalize;
-    width: 200%;
+    width: 110%;
     font-size: 10px;
     transition: 0.1s;
     transform: scale(1);
+    transform: translateY(2.6px);
     position: relative;
-    top: 0;
-    padding-right: 0px;
-    padding-left: 0px;
+    color: var(--p5);
+    padding: 5px 5px 5px 5px;
 }
 
 /* Dropdown-Content Hover Enable Display*/
@@ -151,8 +156,35 @@ div.dropdown:hover div.dropdown-content {
     display: block;
 }
 
-.icon {
-    width: 1.28571429em;
+/* SIDE AND MAIN POSITION */
+#grid-main {
+    margin: 60px 10px 10px 10px;
+    width: 100%;
+    transform: translateX(-10%);
+}
+
+#grid-side {
+    background-color: white;
+    margin: 60px 10px 10px 10px;
+    border-radius: 10px;
+    width: 80%;
+    padding: 10px;
+}
+
+.profile img {
+    width: 100%;
+}
+
+[class^="icon"] {
+    width: 10px;
+}
+
+#grid-side div {
+    width: 100%;
+}
+
+.skill img {
+    width: 10px;
     text-align: center;
 }
 
