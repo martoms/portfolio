@@ -77,7 +77,7 @@ nav > div > a:not(:first-child), div.dropdown {
 
 /* Tweak vertical alignment */
 div.dropdown {
-    top: -1.5px;
+    top: -0.5px;
 }
 
 /* Not-visted | Visited */
@@ -95,8 +95,10 @@ nav div a:link:not(.dropdown-content), nav div a:visited {
     position: relative;
     border: solid var(--p2);
     border-width: 0 0 2px 0;
+    height: 1.4em;
     margin-right: 15px;
     margin-left: 15px;
+    top: 1px;
 }
 
 /* Hover */
@@ -113,18 +115,18 @@ nav div a:nth-child(2):hover {
 }
 
 /* Tweak vertical alignment */
-div.dropdown:hover {
-    top: -2.5px;
+.dropdown:hover {
+    top: -2px;
 }
 
 /* Dropdown-Content-Hover position adjustment */
-#body div.dropdown a:hover {
+.dropdown a:hover {
     padding-right: 0px;
     padding-left: 0px;
 }
 
 /* Dropdown-Content position */
-div.dropdown-content {
+.dropdown-content {
     position: absolute;
 }
 
@@ -137,12 +139,12 @@ div.dropdown-content {
 }
 
 /* Dropdown-Content Not-Hovered */
-#body div.dropdown div.dropdown-content {
+.dropdown .dropdown-content {
     display: none;
 }
 
 /* Dropdown-Content Appearance */
-#body div.dropdown div.dropdown-content a {
+.dropdown-content a {
     display: block;
     text-transform: capitalize;
     width: 200%;
@@ -156,7 +158,7 @@ div.dropdown-content {
 }
 
 /* Dropdown-Content Hover Enable Display*/
-#body div.dropdown:hover div.dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
