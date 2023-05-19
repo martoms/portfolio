@@ -19,7 +19,7 @@
     --p9: #4BC87F;
     --p10: #29668B;
     --p11: #6EAFF7;
-    --f1: font-family: 'Poppins', sans-serif;
+    --f1: 'Poppins', sans-serif;
 }
 
 /* SCROLL BAR | GRADIENT BACKGROUND */
@@ -40,7 +40,116 @@ body {
     background-image: linear-gradient(135deg, var(--p1), var(--p1), var(--p2));
 }
 
+/* TOP NAVBAR SETTINGS */
 
+/* My Professional Logo */
+#logo {
+    position: relative;
+    height: auto;
+    width: 50px;
+    margin-right: 100%;
+    top: 0.5rem;
+}
+
+/* MAIN NAVBAR: Position | Alignment | Background */
+nav {
+    position: fixed;
+    top: 5px;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 0px 50px;
+    background-color: none;
+    background-image: none;
+}
+
+/* Navigation Menu Position */
+nav > div {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Menu Spacing */
+nav > div > a:not(:first-child), div.dropdown {
+    margin-left: 20px;
+}
+
+/* Not-visted | Visited */
+nav div a:link:not(.dropdown-content), nav div a:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--p5);
+}
+
+/* Active / Current Page */
+.active {
+    transform: scale(1.5);
+    position: relative;
+    border: solid var(--p2);
+    border-width: 0 0 2px 0;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* Hover */
+nav div a:hover:not(.active), div.dropdown:hover {
+    transition: 0.1s;
+    transform: scale(1.5);
+    position: relative;
+    top: 0px;
+    padding: 0 30px 0 30px;
+}
+
+/* Tweak vertical alignment */
+div.dropdown:hover {
+    top: -2.5px;
+}
+
+/* Dropdown-Content-Hover position adjustment */
+.nav-items div.dropdown a:hover {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* Dropdown-Content position */
+div.dropdown-content {
+    position: absolute;
+}
+
+/* Dropdown-Content List Behavior and Appearance */
+.dropdown-content a:hover {
+    border-color: var(--p8);
+    border-style: solid;
+    border-width: 0 0 0 2px;
+    padding-left: 3px !important;
+}
+
+/* Dropdown-Content Not-Hovered */
+div.dropdown div.dropdown-content {
+    display: none;
+}
+
+/* Dropdown-Content Appearance */
+div.dropdown div.dropdown-content a {
+    display: block;
+    text-transform: capitalize;
+    width: 200%;
+    font-size: 10px;
+    transition: 0.1s;
+    transform: scale(1);
+    position: relative;
+    top: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* Dropdown-Content Hover Enable Display*/
+div.dropdown:hover div.dropdown-content {
+    display: block;
+}
 
 .icon {
     width: 1.28571429em;

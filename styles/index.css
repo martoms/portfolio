@@ -28,7 +28,7 @@
     --p9: #4BC87F;
     --p10: #29668B;
     --p11: #6EAFF7;
-    --f1: font-family: 'Poppins', sans-serif;
+    --f1: 'Poppins', sans-serif;
 }
 
 /* SCROLL BAR | GRADIENT BACKGROUND */
@@ -46,7 +46,7 @@
 #logo {
     position: relative;
     height: auto;
-    width: 30px;
+    width: 50px;
     margin-right: 100%;
     top: 0.5rem;
 }
@@ -72,12 +72,7 @@ nav > div {
 
 /* Navigation Menu Spacing */
 nav > div > a:not(:first-child), div.dropdown {
-    margin-left: 10px;
-}
-
-/* Tweak vertical alignment */
-div.dropdown {
-    top: -1.5px;
+    margin-left: 20px;
 }
 
 /* Not-visted | Visited */
@@ -85,7 +80,7 @@ nav div a:link:not(.dropdown-content), nav div a:visited {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 500;
-    font-size: 10pt;
+    font-size: 1.5rem;
     color: var(--p5);
 }
 
@@ -105,11 +100,7 @@ nav div a:hover:not(.active), div.dropdown:hover {
     transform: scale(1.5);
     position: relative;
     top: 0px;
-    padding: 0 20px 0 20px;
-}
-
-nav div a:nth-child(2):hover {
-    padding: 0 10px 0 5px
+    padding: 0 30px 0 30px;
 }
 
 /* Tweak vertical alignment */
@@ -185,7 +176,8 @@ div.dropdown-content {
 #name {
     color: var(--p3);
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 5rem;
+    letter-spacing: -1px;
 }
 
 /* Short Discription */
@@ -194,7 +186,7 @@ div.dropdown-content {
     margin-left: 5px;
     border-left: var(--p5) solid 2px;
     color: var(--p5);
-    font-size: 8pt;
+    font-size: 1rem
 }
 
 /* Expertise */
@@ -211,8 +203,8 @@ div.dropdown-content {
     border: none;
     text-align: center;
     text-decoration: none;
-    font-size: 8pt;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 600;
     padding: 10px 15px;
     margin-left: 5px;
     width: auto;
@@ -233,7 +225,7 @@ div.dropdown-content {
 .profileButton span:after {
     content: '\00bb';
     position: absolute;
-    font-size: 2em;
+    font-size: 1.8em;
     opacity: 0;
     top: 0%;
     right: 27px;
