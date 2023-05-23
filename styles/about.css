@@ -207,13 +207,6 @@ div.dropdown:hover div.dropdown-content {
     align-items: center;
 }
 
-.dropdown-container-skill {
-    display: block;
-    width: 100%;
-    text-align: left;
-
-}
-
 /* Profile Image */
 .profile img {
     width: 100%;
@@ -250,7 +243,17 @@ div.dropdown:hover div.dropdown-content {
 
 /* SKILLS DATA START */
 
-/*  */
+/* Skills Categories Dropdown */
+.dropdown-container-skill {
+    display: block;
+    width: 100%;
+    text-align: left;
+
+}
+
+.dropdown-container-skill div {
+    display: inline-block;
+}
 
 /* SKILLS DATA END */
 
