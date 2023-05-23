@@ -251,7 +251,7 @@ div.dropdown:hover div.dropdown-content {
 
 }
 
-.dropdown-container-skill div {
+.dropdown-container-skill span div {
     display: inline-block;
 }
 
